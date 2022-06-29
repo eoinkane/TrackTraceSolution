@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="TrackTraceProject.PresentationLayer.GenerateVisits.GenerateVisitsUserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:local="clr-namespace:TrackTraceProject.PresentationLayer.GenerateVisits"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="792">
+    <Grid>
+        <Label x:Name="Lbl_Location" Content="Location" HorizontalAlignment="Left" Margin="50,19,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListBox_Location" HorizontalAlignment="Left" Height="271" Margin="50,50,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="ListBox_Location_SelectionChanged"/>
+
+        <Label x:Name="Lbl_StartDate" Content="Start Date" HorizontalAlignment="Left" Margin="250,19,0,0" VerticalAlignment="Top"/>
+        <xctk:DateTimePicker x:Name="DateTimePicker_StartDateTime" Height="23" Margin="250,50,267,277" Format="Custom"  FormatString="dd/MM/yyyy hh:mm tt" TimeFormat="Custom" TimeFormatString="hh:mm tt" ValueChanged="DateTimePicker_DateTime_ValueChanged"/>
+        <Label x:Name="Lbl_InvalidStartDate" Visibility="Hidden" Foreground="Red" Content="Please select a start date before the end date" HorizontalAlignment="Left" Margin="250,73,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="Lbl_EndDate" Content="End Date" HorizontalAlignment="Left" Margin="250,146,0,0" VerticalAlignment="Top"/>
+        <xctk:DateTimePicker x:Name="DateTimePicker_EndDateTime" Height="23" Margin="250,172,267,155" Format="Custom"  FormatString="dd/MM/yyyy hh:mm tt" TimeFormat="Custom" TimeFormatString="hh:mm tt" ValueChanged="DateTimePicker_DateTime_ValueChanged"/>
+        <Label x:Name="Lbl_InvalidEndDate" Visibility="Hidden" Foreground="Red" Content="Please select an end date after the start date" HorizontalAlignment="Left" Margin="250,195,0,0" VerticalAlignment="Top"/>
+        
+    </Grid>
+</UserControl>

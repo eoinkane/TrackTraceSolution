@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="TrackTraceProject.PresentationLayer.GenerateContacts.GenerateContactsUserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TrackTraceProject.PresentationLayer.GenerateContacts"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="792">
+    <Grid>
+        <Label x:Name="Lbl_GeneratedContacts" Content="Generated Contacts of {Selected User} after {Selected Date}" HorizontalAlignment="Left" Margin="50,19,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListBox_GeneratedContacts" HorizontalAlignment="Left" Height="260" Margin="50,50,0,0" VerticalAlignment="Top" Width="692"/>
+        <Button x:Name="Btn_CopyToClipboard" Content="Copy To Clipboard" HorizontalAlignment="Left" Margin="630,19,0,0" VerticalAlignment="Top" Width="112" Click="Btn_CopyToClipboard_Click"/>
+
+    </Grid>
+</UserControl>

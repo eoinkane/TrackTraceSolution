@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="TrackTraceProject.PresentationLayer.NewIndividual.NewIndividualUserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TrackTraceProject.PresentationLayer.NewIndividual"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="792">
+    <Grid>
+        <Label x:Name="Lbl_PhoneNumber" Content="Phone Number" HorizontalAlignment="Left" Margin="50,19,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtBox_PhoneNumber" HorizontalAlignment="Left" Height="23" Margin="50,50,0,0" TextWrapping="Wrap" Text="{Binding PhoneNumber}" VerticalAlignment="Top" Width="120" TextChanged="TxtBox_PhoneNumber_TextChanged"/>
+        <Label x:Name="Lbl_PhoneNumberFormat" Content="In the format of +44xxxx xxxxxx" HorizontalAlignment="Left" Margin="225,50,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="Lbl_InvalidPhoneNumberFormat" Visibility="Hidden" Foreground="Red" Content="Invalid Phone Number" HorizontalAlignment="Left" Margin="50,78,0,0" VerticalAlignment="Top" Height="23"/>
+    </Grid>
+</UserControl>
